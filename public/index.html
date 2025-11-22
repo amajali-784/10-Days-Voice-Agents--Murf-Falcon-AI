@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murf AI Voice Agent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Murf AI Voice Agent</h1>
+            <p>Day 1 of the Murf AI Voice Agent Challenge</p>
+        </header>
+
+        <main>
+            <div class="status-panel">
+                <div class="status-indicator">
+                    <span id="connection-status">Disconnected</span>
+                </div>
+                <button id="connect-btn">Connect to Voice Agent</button>
+            </div>
+
+            <div class="conversation-panel">
+                <div class="messages" id="messages"></div>
+                <div class="input-area">
+                    <input type="text" id="text-input" placeholder="Type your message here...">
+                    <button id="send-btn">Send</button>
+                </div>
+                <div class="voice-controls">
+                    <button id="start-recording">🎤 Start Recording</button>
+                    <button id="stop-recording" disabled>⏹️ Stop Recording</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built with Murf Falcon - The fastest TTS API</p>
+        </footer>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
